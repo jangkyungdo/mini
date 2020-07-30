@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
+    <!-- <script src="main.js" defer></script> -->
+    <script src="test.js" defer></script>
+
     <title>Document</title>
   </head>
   <body>
@@ -14,25 +16,44 @@
     <!-- Btn -->
     <div class="buttons">
       <button class="btn">
-        <img src="images/blue_t.png" class="imgBtn" alt="tshirt" />
+        <img
+          src="images/blue_t.png"
+          class="imgBtn"
+          alt="tshirt"
+          data-key="type"
+          data-value="tshirts"
+        />
       </button>
       <button class="btn">
-        <img src="images/blue_p.png" class="imgBtn" alt="pants" />
+        <img
+          src="images/blue_p.png"
+          class="imgBtn"
+          alt="pants"
+          data-key="type"
+          data-value="pants"
+        />
       </button>
       <button class="btn">
-        <img src="images/blue_s.png" class="imgBtn" alt="skirt" />
+        <img
+          src="images/blue_s.png"
+          class="imgBtn"
+          alt="skirt"
+          data-key="type"
+          data-value="skirt"
+        />
       </button>
-      <button class="btn colorBtn blue">Blue</button>
-      <button class="btn colorBtn yellow">Yellow</button>
-      <button class="btn colorBtn pink">Pink</button>
+      <button class="btn colorBtn blue" data-key="color" data-value="blue">
+        Blue
+      </button>
+      <button class="btn colorBtn yellow" data-key="color" data-value="yellow">
+        Yellow
+      </button>
+      <button class="btn colorBtn pink" data-key="color" data-value="pink">
+        Pink
+      </button>
     </div>
 
     <!-- Item List -->
-    <ul class="items">
-      <li class="item">
-        <img src="images/blue_t.png" alt="tshirt" class="item__thumbnail" />
-        <span class="item__description"> male, large</span>
-      </li>
-    </ul>
+    <ul class="items"></ul>
   </body>
 </html>
